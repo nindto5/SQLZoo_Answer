@@ -82,7 +82,7 @@ FROM world
 WHERE LEFT(name,1) = LEFT(capital,1) AND name <> capital
 
 -- 13. Equatorial Guinea and Dominican Republic have all of the vowels (a e i o u) in the name. They don't count because they have more than one word in the name.
-SELECT name
+SELECT name 
 FROM world
 WHERE name LIKE '%a%'
   AND name LIKE '%i%'
